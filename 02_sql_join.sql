@@ -16,10 +16,10 @@ Columns: CountryCode, Language, IsOfficial, Percentage
 
 USE world;
 -- 1: Get the cities with a name starting with ping sorted by their population with the least populated cities first
-SELECT name FROM city WHERE name LIKE 'ping%' ORDER BY population ASC;
+SELECT * FROM city WHERE name LIKE 'ping%' ORDER BY population ASC;
 
 -- 2: Get the cities with a name starting with ran sorted by their population with the most populated cities first
-SELECT name FROM city WHERE name LIKE 'ping%' ORDER BY population DESC;
+SELECT * FROM city WHERE name LIKE 'ping%' ORDER BY population DESC;
 
 -- 3: Count all cities
 SELECT COUNT(*) FROM city;
